@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+Home.html file
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+{% csrf_token %}
+
+<div class="container mt-5">
+    <div class="text-center mb-4">
+        <h1 class="text-primary fw-bold display-5">Welcome to Issue Manager</h1>
+        <p class="lead text-muted">Organize, assign, and resolve issues effectively with our streamlined system.
+        </p>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md 10">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <img src="{% static 'img/home.png' %}" alt="About image" class="img-fluid">
+
+                    <p class="fs-5">Issue Manager is designed to simplify task and issue tracking in your team or project. It allows administrators to assign responsibilities and users to easily report bugs or problems. Whether you're a developer, manager, or tester, the platform helps you stay aligned with project goals. All data is safely stored and organized so that your team remains efficient. With a clear and intuitive interface, everyone can collaborate without confusion.</p>
+                    <p class="fs-5"> You can customize workflows to suit your team’s unique structure. Users receive timely notifications and can monitor progress in real-time. Our system also includes labels, filters, and priority flags to better manage complex tasks. As your project scales, the Issue Manager grows with you — no matter how big your team gets. Stay focused, stay productive, and resolve issues before they become problems.</p>
+                    <img src="{% static 'img/home.png' %}" alt="About image" class="img-fluid">
+
+                    <p class="fs-5"> Our platform is designed to streamline the process of identifying, tracking, and resolving issues with ease. Whether you're managing a small project or coordinating a large team, Issue Manager helps ensure that nothing slips through the cracks.
+                    </p>
+                    <p class="fs-5"> With a user-friendly interface and intuitive tools, you can assign tasks, set priorities, and monitor progress in real-time. Our goal is to help you stay organized, boost accountability, and maintain momentum across your team.
+        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
+  <div class="container">
+    <p class="mb-2">© 2025 Issue Manager | All Rights Reserved</p>
+    <div>
+      <a href="mailto:example@example.com" class="text-white mx-2">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/yourprofile" class="text-white mx-2" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://facebook.com/yourpage" class="text-white mx-2" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://twitter.com/yourhandle" class="text-white mx-2" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+{% endblock content %}
